@@ -1,27 +1,9 @@
-# AngularBlog
+# Blog Responsivo com Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+Este repositório faz parte do desafio de projeto do Bootcamp da Dio e baseado no [repositório Angular Blog](https://github.com/felipeAguiarCode/angular-blog.git).
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Descrição
+O blog foi desenvolvido por meio do framework Angular e apresenta a seguinte construção:
+- Os artigos são carregados por meio de um arquivo .json e organizados de forma que a visualização dos respectivos cards aconteça do mais recente (último item do arquivo) ao mais antigo.
+- Na página "Home", o card principal (main-card) aponta para o artigo mais recente, os minicards (small-cards) apontam aos demais artigos.
+- Na página '"Articles", todos os artigos são representados nos minicards. 
