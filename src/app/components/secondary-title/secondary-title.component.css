@@ -1,0 +1,16 @@
+.container__secondary-title {
+    width: 100%;
+    margin-top: 20px;
+    padding: 3px 0;
+    background-color: #fff;
+    border-top: 1px solid rgb(172, 172, 172);
+    border-bottom: 3px double rgb(172, 172, 172);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.container__secondary-title > h2 {
+    padding: 10px 0;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.8);
+}

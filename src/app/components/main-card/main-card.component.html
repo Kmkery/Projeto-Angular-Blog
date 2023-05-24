@@ -1,0 +1,11 @@
+<div class="container__main-card flex__content">
+    <div class="main-card__content flex__content">
+        <img src="{{ lastArticle.imageLink }}" alt="{{ lastArticle.alt }}">
+        <div class="container__main-card__description flex__content">
+            <h3>{{ lastArticle.title }}</h3>
+            <p>{{ lastArticle.preface }}</p>
+            <p><a [routerLink]="['content', lastArticle.title]">Leia mais...</a></p>
+            
+        </div>
+    </div>
+</div>

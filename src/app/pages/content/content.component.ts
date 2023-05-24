@@ -1,36 +1,32 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { dataFake } from '../../data/dataFake';
+import { Component, OnInit } from '@angular/core'
+import  { BlogDataService } from "../../services/blog-data.service"
+import { Obj } from 'src/app/shared/interfaces'
+import { ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
-export class ContentComponent implements OnInit{
-  photoCover : string = ''
-  contentTitle : string = ''
-  contentDescription : string = ''
-  private id : string | null = '0'
+export class ContentComponent implements OnInit {
+  private title : string | null = ''
+  articleContent : Obj = {title: '', imageLink: '', alt: '', preface: '', text: ''}
 
   constructor(
+    private service : BlogDataService,
     private route : ActivatedRoute
   ) {}
 
-  ngOnInit() : void {
-    this.route.paramMap.subscribe(value => 
-      this.id = value.get("id") // pega o Id do elemento acessado
-    )
-
-    this.setValuesToComponent(this.id)
+  setPropertiesValuesToComponent(title : string | null) {
+    const componentProps = this.service.getData('all')
+    this.articleContent = componentProps.filter(value => value.title === title)[0] 
   }
 
-  setValuesToComponent(id : string | null) {
-    const result = dataFake.filter(article => article.id === id)[0]
-
-    this.contentTitle = result.title
-    this.contentDescription = result.description
-    this.photoCover = result.photoCover
+  ngOnInit() : void {
+    this.route.paramMap.subscribe(value =>
+      this.title = value.get("title")
+    )
     
+    this.setPropertiesValuesToComponent(this.title)  
   }
 }

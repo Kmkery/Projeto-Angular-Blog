@@ -1,20 +1,12 @@
-<div class="container__small-card">
-    <div class="container__small-card-content">
-        <div class="small-card__photo">
-            <img 
-                src="{{ photoCover }}" 
-                alt="" 
-                srcset=""
-            >
-        </div>
-        <div class="small-card__title">
-            <h1><a [routerLink]="['content', Id]">{{ cardTitle }}</a></h1>
-        </div>
+<div id="container__small-cards" class="container__small-cards flex__content">
+    <div class="container__small-card flex__content" *ngFor="let article of otherArticles">
+        
+        <a [routerLink]="['content', article.title]" class="flex__content">
+            <img src="{{ article.imageLink }}" alt="{{ article.alt }}">
+            <div class="container__small-card__description">
+                <h3>{{ article.title }}</h3>
+                <p>{{ article.preface }}</p>
+            </div>
+        </a>
     </div>
-    
-    <div class="container__small-card__separator">
-        <hr />
-    </div>
-    
 </div>
-
