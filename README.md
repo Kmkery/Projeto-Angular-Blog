@@ -1,9 +1,9 @@
-Blog Responsivo com Angular
-Este repositÛrio faz parte do desafio de projeto do Bootcamp da Dio e baseado no repositÛrio Angular Blog.
+# Blog Responsivo com Angular
 
-DescriÁ„o
-O blog foi desenvolvido por meio do framework Angular, a idÈia foi fazer uma p·gina minimalista, apresentando a seguinte contruÁ„o:
+Este reposit√≥rio faz parte do desafio de projeto do Bootcamp da Dio e baseado no [reposit√≥rio Angular Blog](https://github.com/felipeAguiarCode/angular-blog.git).
 
-Os artigos s„o carregados por meio de um arquivo .json e organizados de forma que a visualizaÁ„o dos respectivos cards aconteÁa do mais recente (˙ltimo item do arquivo) ao mais antigo.
-Na p·gina "Home", o card principal (main-card) aponta para o artigo mais recente, os minicards (small-cards) apontam aos demais artigos.
-Na p·gina '"Articles", todos os artigos s„o representados nos minicards.
+## Descri√ß√£o
+O blog foi desenvolvido por meio do framework Angular, a id√©ia foi fazer uma p√°gina minimalista, apresentando a seguinte contru√ß√£o:
+- Os artigos s√£o carregados por meio de um arquivo .json e organizados de forma que a visualiza√ß√£o dos respectivos cards aconte√ßa do mais recente (√∫ltimo item do arquivo) ao mais antigo.
+- Na p√°gina "Home", o card principal (main-card) aponta para o artigo mais recente, os minicards (small-cards) apontam aos demais artigos.
+- Na p√°gina '"Articles", todos os artigos s√£o representados nos minicards. 
